@@ -24,7 +24,6 @@ def julia_point_in(x, y, c_real, c_img, depth = 5):
             return False
         #using x_n+1 = x_n^2 + c with complex values
         #(a+ib)^2 + c= a^2 + 2iab - b^2 + c = a^2 - b^2 + c_real + i(2ab+c_img)
-        #TO DO:  Use complex library to simplify this
         return julia_point_in(x**2 - y**2 + c_real, 2*x*y + c_img, c_real,
                                    c_img, depth-1)
     return True
