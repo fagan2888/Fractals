@@ -5,20 +5,20 @@ from ColorReference import ColorReference
 def sherp(depth, distance, colorRef):
     if depth > -1:
         turtle.fillcolor(colorRef.getColor(depth))
-        turtle.fill(True)
+        turtle.begin_fill()
         for x in range(3): #just for drawing
             turtle.fd(distance)
             turtle.lt(120)
-        turtle.fill(False)
+        turtle.end_fill()
         
         for x in range(3):
             turtle.fd(distance) #continue the sherpinski
             turtle.lt(120) #real sherpinski
             if depth == 0:
-                turtle.fill(True)
-            sherp(depth-1, distance/2)
+                turtle.begin_fill()
+            sherp(depth-1, distance/2, colorRef)
             #turtle.lt(120) #messed up sherpinski
-        turtle.fill(False)
+        turtle.end_fill()
 
 def kochLine(depth, distance):
     if depth == 0:

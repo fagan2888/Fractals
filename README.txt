@@ -1,11 +1,10 @@
 Author: Vitchyr Pong
 
-Create fractals!
+Create fractals! This uses Python 3.3 and Pygame 1.9.2.
 
-Use fractals.py to generate the Sherpinsky triangle (and the Koch snowflake
-eventually) fractal using pygame.
+Use fractals.py to generate the Sherpinsky triangle and Koch snowflake fractals using pygame.
 
-Using iterfractal.py to output Julia sets as well as the Mandlebrot set to a
+Using mandlebrot.py to output Julia sets as well as the Mandlebrot set to a
 .dat file.
 
 Feel free to use any of my code to play, impress your friends, make money, or
